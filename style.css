@@ -1,0 +1,13 @@
+:root { --ink: #1c1714; --paper: #f2ebdc; --red: #b8322a; --muted: #6b625a; }
+@media (prefers-color-scheme: dark) { :root { --ink: #ece4d4; --paper: #1b1714; --red: #e0685f; --muted: #a59a8d; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.7 "Noto Serif", "Hiragino Mincho ProN", "PMingLiU", serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 2.2em; margin: 0 0 4px; letter-spacing: .05em; }
+h1 small { font-size: .45em; color: var(--muted); letter-spacing: 0; }
+h2 { border-top: 1px solid var(--muted); padding-top: 20px; margin-top: 36px; }
+nav a, a { color: var(--red); }
+nav { margin: 12px 0 24px; display: flex; gap: 14px; flex-wrap: wrap; }
+.lang { font-size: .9em; color: var(--muted); }
+ul { padding-left: 1.2em; }
+section[lang] { scroll-margin-top: 8px; }
